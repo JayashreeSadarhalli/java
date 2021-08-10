@@ -1,0 +1,32 @@
+class chocolate{
+    public chocolate(){
+        System.out.println("class chocolate");
+    }
+    public void brand(){
+        System.out.println("Brand:cadbury");
+    }
+}
+class dark_chocolate extends chocolate{
+    public dark_chocolate(){
+        System.out.println("class dark_chocolate");
+    }
+    public void type(){
+        System.out.println("type: Dark Chocolate");
+    }
+}
+public class Main extends dark_chocolate{
+    public Main(){
+        System.out.println("class Chocolate category");
+    }
+    public void name(){
+        System.out.println("Name:cadbury bournville");
+    }
+    
+	public static void main(String[] args) {
+	  Main obj=new Main();
+	  obj.brand();
+	  obj.type();
+	  obj.name();
+	}
+}
+
